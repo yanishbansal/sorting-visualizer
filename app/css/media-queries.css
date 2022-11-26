@@ -1,0 +1,104 @@
+/* device width >= 768px */
+
+@media (min-width: 768px) {
+    .app {
+        display: block;
+        height: 100vh;
+        position: relative;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .nav {
+        background-color: #f8f9fa;
+        padding: 0.75rem 1rem;
+        height: 4rem;
+    }
+
+    .logo-text {
+        font-weight: 400;
+    }
+
+    .menu > * {
+        color: #7c7c7d;
+        margin-left: 1.25rem;
+    }
+    .menu > a:hover,
+    span:hover {
+        color: #181819 !important;
+        cursor: pointer;
+    }
+    .down-arrow {
+        height: 0.5rem;
+        margin-left: 0.3125rem;
+    }
+    .algorithm-button-container,
+    .controls-button-container {
+        position: relative;
+    }
+    .options-container {
+        position: absolute;
+        top: 2rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 8.5rem;
+        padding: 0.25rem 0;
+        border: 1.5px solid #cacaca;
+        border-radius: 0.125rem;
+        color: #181819;
+    }
+    .algorithm-text {
+        display: inline-block;
+        width: 100%;
+        padding: 0.25rem 0rem;
+        text-align: center;
+        transition: background-color 300ms ease-in-out;
+        cursor: pointer;
+    }
+    .algorithm-text:hover {
+        background-color: #f8f9fa;
+    }
+    .controls-container {
+        padding: 0.25rem 0.75rem;
+    }
+    .controls-container p:last-child {
+        margin-bottom: 0.25rem;
+    }
+    .slider {
+        width: 7rem;
+        margin-top: 0.25rem;
+    }
+    .speed-slider {
+        margin-top: 0.5rem;
+    }
+
+    .sort-btn {
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        color: #5bc9b1;
+        padding: 0.375rem 0.75rem;
+        border: 1.75px solid #5bc9b1;
+        border-radius: 0.25rem;
+        background-color: #f8f9fa;
+        transition: all 300ms ease-in-out;
+    }
+    .sort-btn:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #5bc9b1;
+    }
+
+    .main {
+        height: calc(100vh - 4rem);
+    }
+
+    .bar {
+        width: 2.5rem;
+        margin-left: 0.375rem;
+        padding-top: 0.4375rem;
+        color: #fff;
+        font-weight: 500;
+    }
+}

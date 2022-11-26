@@ -1,0 +1,19 @@
+{
+    "name": "sorting-visualizer",
+    "version": "1.0.0",
+    "description": "Sorting Visualizer is an interactive platform used to visualize multiple sorting algorithms.",
+    "main": "app.js",
+    "engines": {
+        "node": "16.17.0",
+        "npm": "8.19.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Abhishek Pandey",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2"
+    }
+}

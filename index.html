@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/media-queries.css" />
+        <title>Sorting Visualizer</title>
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <nav class="nav flex flex-jc-sb flex-ai-c">
+                    <div class="flex flex-ai-c">
+                        <h1 class="logo-text">Sorting Visualizer</h1>
+                        <div class="menu flex flex-ai-c">
+                            <a class="randomize-button" href="#">Randomize</a>
+                            <div class="algorithm-button-container">
+                                <span class="algorithm-button"
+                                    >Selection Sort</span
+                                ><img
+                                    class="algorithm-down-arrow down-arrow"
+                                    src="/img/down-filled-triangular-arrow-gray.png"
+                                    alt="down-arrow"
+                                />
+                                <div
+                                    class="algorithms-container options-container flex ai-c hide"
+                                >
+                                    <p class="algorithm-text">Selection Sort</p>
+                                    <p class="algorithm-text">Bubble Sort</p>
+                                    <p class="algorithm-text">Merge Sort</p>
+                                    <p class="algorithm-text">Quick Sort</p>
+                                </div>
+                            </div>
+                            <div class="controls-button-container">
+                                <span class="controls-button">Controls</span
+                                ><img
+                                    class="controls-down-arrow down-arrow"
+                                    src="/img/down-filled-triangular-arrow-gray.png"
+                                    alt="down-arrow"
+                                />
+                                <div
+                                    class="controls-container options-container flex ai-c hide"
+                                >
+                                    <input
+                                        class="array-size-slider slider"
+                                        type="range"
+                                        min="2"
+                                        max="29"
+                                        value="15"
+                                    />
+                                    <p>Increase Array Size</p>
+                                    <input
+                                        class="speed-slider slider"
+                                        type="range"
+                                        min="100"
+                                        max="1000"
+                                        value="500"
+                                        step="100"
+                                    />
+                                    <p>Increase Speed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="sort-btn">Sort</button>
+                </nav>
+            </header>
+            <main class="main flex flex-jc-c"></main>
+        </div>
+        <div class="message-box flex flex-jc-c flex-ai-c">
+            <p>Website currently works only on Desktop view</p>
+        </div>
+        <script src="/js/script.js"></script>
+        <script src="/js/algorithms/bubble-sort.js"></script>
+        <script src="/js/algorithms/selection-sort.js"></script>
+        <script src="/js/algorithms/merge-sort.js"></script>
+        <script src="/js/algorithms/quick-sort.js"></script>
+    </body>
+</html>
